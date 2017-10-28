@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+    http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd"
+    version="2.1">
+    <!-- JSF and Spring are integrated -->
+    <application>
+               
+        
+<!--        <el-resolver>org.primefaces.application.exceptionhandler.PrimeExceptionHandlerELResolver</el-resolver>                    -->
+   <!--  <message-bundle>com.allinone.i18n.custom.messages</message-bundle>
+        <resource-bundle>
+            <base-name>com.allinone.i18n.messages</base-name>
+            <var>msg</var>            
+        </resource-bundle>  -->
+    </application>   
+  
+   
+    <!-- http://stackoverflow.com/questions/11901882/java-lang-illegalstateexception-cdata-tags-may-not-nest, http://showcase.omnifaces.org/exceptionhandlers/FullAjaxExceptionHandler -->
+    <!--    <factory>
+        <exception-handler-factory>org.omnifaces.exceptionhandler.FullAjaxExceptionHandlerFactory</exception-handler-factory>        
+    </factory>-->
+    <!-- configuration of navigation rules -->	
+      
+<!--    <navigation-rule>
+        <from-view-id>/pages/user/profile/updatePassword.xhtml</from-view-id> 
+        <navigation-case>
+            <from-outcome>SUCCESS</from-outcome>
+            <to-view-id>#{facesContext.externalContext.requestContextPath}/j_spring_security_logout</to-view-id>            
+            <redirect/>
+        </navigation-case>
+       
+    </navigation-rule> -->
+   
+   
+    <managed-bean>
+        <managed-bean-name>currentDate</managed-bean-name>
+        <managed-bean-class>java.util.Date</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+  
+   
+</faces-config>

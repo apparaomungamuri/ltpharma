@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+<f:view contentType="text/html">
+	<h:head>
+		<title>#{msg['app.title']}</title>
+	</h:head>
+	<h:body>
+		<h:panelGroup layout="block">
+			<ui:insert name="headerTop">
+				<ui:include src="/templates/common/headerTop.html" />
+			</ui:insert>
+		</h:panelGroup>
+		<h:panelGroup layout="block">
+			<ui:insert name="topMenu">
+				<ui:include src="/templates/common/topMenu.html" />
+			</ui:insert>
+		</h:panelGroup>
+		<h:panelGroup layout="block">
+			<ui:insert name="headerImg">
+				<ui:include src="/templates/common/headerImg.html" />
+			</ui:insert>
+		</h:panelGroup>
+	</h:body>
+</f:view>
+</html>

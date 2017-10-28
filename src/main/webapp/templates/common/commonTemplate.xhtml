@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+<f:view contentType="text/html">
+	<h:head>
+		<meta charset="UTF-8" />
+		<title>LT Pharma</title>
+		<meta name="description" content="Description of your site goes here" />
+		<meta name="keywords" content="keyword1, keyword2, keyword3" />
+		<link href="../../resources/css/style.css?v=8-1-2016AM" rel="stylesheet" type="text/css" />
+	</h:head>
+
+	<h:body>
+		<div class="main-out">
+			<div class="main">
+				<div class="page">
+					<div class="top">
+					<h:panelGroup layout="block">
+						<ui:insert name="header">
+							<ui:include src="/templates/common/header.xhtml" />
+						</ui:insert>
+					</h:panelGroup>
+
+					<h:panelGroup layout="block">
+						<ui:insert name="content">
+							<ui:include src="/templates/common/content.xhtml" />
+						</ui:insert>
+					</h:panelGroup>
+					</div>
+					<ui:insert name="footer">
+						<ui:include src="/templates/common/footer.html" />
+					</ui:insert>
+
+				</div>
+			</div>
+		</div>
+	</h:body>
+</f:view>
+</html>
